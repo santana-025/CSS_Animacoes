@@ -1,0 +1,16 @@
+body {
+    animation: pulando 1s ease infinite alternate-reverse;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+img {
+    width: 50px;
+}
+
+@keyframes pulando {
+    to {
+        transform: translateY(20px);
+    }
+}
