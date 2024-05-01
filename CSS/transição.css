@@ -1,0 +1,27 @@
+body{
+    margin: 30px;
+}
+
+.box{ /*div criada com essas dimenções */
+    background-color: #157bad;
+    height: 200px;
+    width: 200px;
+
+    transition-property: background-color; /* escolhe qual propriedade vai passar pela transição*/
+    transition-duration: 2s;/*  = duração da  transição*/
+
+    /*pode passar mais comandos de uma vez :*/
+
+    transition-property: background-color,border-radius;
+    transition-duration: 2s,2s;
+
+    transition-delay: 1s;/*  = deley para execultar*/
+    transition-timing-function: ease-in; /* = suave no inicio*/
+    transition-timing-function: ease-out;/*  = suave no fim*/
+    transition-timing-function: ease-in-out; /* = suave em ambos*/
+    transition-timing-function:cubic-bezier(0.15,.89,.85,.26); /* = Personalizado*/
+}
+.box:hover {
+    background-color: #ec5840;
+    border-radius: 50%;
+}

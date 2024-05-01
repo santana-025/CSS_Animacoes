@@ -1,0 +1,28 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 500px;
+    background-color: bisque;
+    display: flex;
+    justify-content: start;
+    align-self: center;
+}
+
+img{
+    position: absolute;
+    animation: gol 1s;
+}
+
+@keyframes gol {
+    0% {
+        transform: translateX(0);
+    
+    }
+
+    100% {
+        transform: translateX(100vw - 100px);
+    }
+}

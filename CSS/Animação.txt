@@ -1,0 +1,98 @@
+ 		3 Tipos de Animação 
+
+Funcional :
+Indica algo, ajuda o usuario a fazer as tarefas
+
+material :
+movimento dos objetos pela tela, simular gravidade
+
+encantador :
+funcional e material acima de tudo porem tras muita diversão 
+vida e personalidade ao projeto.
+
+
+
+
+			Transform 
+
+transform: translateX(100px); = Move no Eixo x
+transform: translateY(100px); = Move no Eixo 
+transform: translate(100px, 100px); = Move x e y
+
+transform: scalex(2); = aumenta no eixo x
+transform: scaley(2); =	amenta no eixo y
+transform: scale(2, 2); = aumenta em ambos
+	( Valores -1 > 0.5 diminui )
+
+transform: rotate(180deg); = Rotaciona o Elemento°
+transform: rotate(-180deg); = pode ser negativo
+transform: rotate(0.5turn); = meia volta 
+
+
+transform: skewx(20deg); = inclina no eixo x
+transform: skewy(20deg); = inclina no eixo y
+transform: skew(20deg,20deg); = inclina em ambos
+
+
+Podemos combinar :
+
+transform: skew(20deg) translate(50px); = inclina em 20° eixo x e desloca 50px no eixo x
+
+cuidado ao sobreescrever valores : exemplo >>
+quer mudar o valor de skew()
+
+transform: skew(20deg) translate(50px);
+transform: skew(30deg) = ira apagar o translate(50px)
+transform: skew(30deg) translate(50px); = repetir as outras atribuição
+
+		Transição
+
+transition-property: background-color; = escolhe qual propriedade vai passar pela transição
+transition-duration: 2s; = duração da  transição
+
+pode passar mais comandos de uma vez :
+
+transition-property: background-color,border-radius;
+transition-duration: 2s,2s;
+
+transition-delay: 1s; = deley para execultar
+transition-timing-function: ease-in; = suave no inicio
+transition-timing-function: ease-out; = suave no fim
+transition-timing-function: ease-in-out; = suave em ambos
+transition-timing-function:cubic-bezier(0.15,.89,.85,.26); = Personalizado
+
+
+		@Keyframes & Animation
+transform e opacity
+interpolação 
+
+@keyframes gol { pode usar quantos % quiser 
+    0% {
+        transform: translateX(0); = do inicio no eixo x
+    
+    }
+
+    100% {
+        transform: translateX(100vw - 100px); = para o fim do eixo x - tamanho do objeto
+    }
+}
+
+ou usa :
+
+from{	 de
+}
+to{	para
+}
+
+se não importa o inicio da animação usa apenas o from
+
+
+
+
+
+
+
+
+
+
+	

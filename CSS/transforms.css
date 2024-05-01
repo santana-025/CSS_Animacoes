@@ -1,0 +1,45 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.divpai{
+    outline: 2px solid red;
+}
+
+img{
+    transform: translateX(100px);/* = Move no Eixo x*/
+    transform: translateY(100px);/* = Move no Eixo */
+    transform: translate(100px, 100px); /*= Move x e y*/
+
+    transform: scalex(2); /*= aumenta no eixo x*/
+    transform: scaley(2); /*=	amenta no eixo y*/
+    transform: scale(2, 2);/* = aumenta em ambos*/
+	/*( Valores -1 > 0.5 diminui )*/
+
+    transform: rotate(180deg); /* = Rotaciona o Elemento° */
+    transform: rotate(-180deg); /* = pode ser negativo*/
+    transform: rotate(0.5turn); /*= meia volta */
+
+
+    transform: skewx(20deg); /*= inclina no eixo x*/
+    transform: skewy(20deg); /*= inclina no eixo y*/
+    transform: skew(20deg,20deg);/* = inclina em ambos*/
+
+
+    /*Podemos combinar :*/
+    transform: skew(20deg) translate(50px); /*= inclina em 20° eixo x e desloca 50px no eixo x*/
+      
+    /*cuidado ao sobreescrever valores : exemplo >>
+    quer mudar o valor de skew()*/
+
+    transform: skew(20deg) translate(50px);
+    transform: skew(30deg) /*= ira apagar o translate(50px)*/
+    transform: skew(30deg) translate(50px);/* = repetir as outras atribuição*/
+    transform: skew(20deg) translate(50px);
+
+}
