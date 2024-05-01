@@ -1,9 +1,21 @@
-body{
+@keyframes gol {
+    0% {
+        transform: translateX(0);
+
+    }
+
+    100% {
+        transform: translateX(calc(100vw - 80px));
+    }
+}
+
+body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 500px;
     background-color: bisque;
     display: flex;
@@ -11,18 +23,12 @@ body{
     align-self: center;
 }
 
-img{
-    position: absolute;
-    animation: gol 1s;
+.img {
+    display: grid;
+    align-content: center;
+    animation: gol 3s linear infinite;
 }
 
-@keyframes gol {
-    0% {
-        transform: translateX(0);
-    
-    }
-
-    100% {
-        transform: translateX(100vw - 100px);
-    }
+.img:hover {
+    animation-play-state: paused;
 }
