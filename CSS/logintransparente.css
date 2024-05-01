@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: "Sedan", serif;
+    background-image: url(../imgm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    backdrop-filter: blur(2px);
+    margin: 6rem;
+    padding: 1rem;
+    border: 1px solid rgb(86, 86, 86);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 5px;
+    box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+}
+
+.card h1 {
+    text-align: center;
+    color: black;
+}
+
+.card label {
+    margin: 0px 3px 0px 3px;
+    font-weight: bold;
+}
+
+
+.card input {
+    background-color: #c4accb65;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+#botao {
+    background-color: #102b64a4;
+    color: white;
+}
+
+#botao:hover {
+    background-color: #51245fc6;
+
+    font-weight: 500;
+}
