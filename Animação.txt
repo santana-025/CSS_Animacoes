@@ -10,9 +10,6 @@ encantador :
 funcional e material acima de tudo porem tras muita diversão 
 vida e personalidade ao projeto.
 
-
-
-
 			Transform 
 
 transform: translateX(100px); = Move no Eixo x
